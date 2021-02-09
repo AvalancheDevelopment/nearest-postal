@@ -24,6 +24,7 @@ Citizen.CreateThread(
 			if ni ~= -1 then
 				local nd = math.sqrt(ndm) -- nearest distance
 				nearest = {i = ni, d = nd}
+				TriggerEvent('nearestPostal', postals[ni].code)
 			end
 
 			-- if blip exists
